@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+//router Token
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+//router API
 route::post('register',[AuthController::class, 'register']);
 route::post('login',[AuthController::class, 'login']);
